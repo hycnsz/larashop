@@ -28,5 +28,6 @@ class CreatePasswordResetsTable extends Migration
     public function down()
     {
         Schema::dropIfExists('password_resets');
+        // 当数据表存在时, 将指定数据表移除
     }
 }

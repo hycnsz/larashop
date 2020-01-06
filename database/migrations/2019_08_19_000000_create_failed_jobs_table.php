@@ -31,5 +31,6 @@ class CreateFailedJobsTable extends Migration
     public function down()
     {
         Schema::dropIfExists('failed_jobs');
+        // 当数据表存在时, 将指定数据表移除
     }
 }

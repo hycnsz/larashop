@@ -32,5 +32,6 @@ class CreateUsersTable extends Migration
     public function down()
     {
         Schema::dropIfExists('users');
+        // 当数据表存在时, 将指定数据表移除
     }
 }

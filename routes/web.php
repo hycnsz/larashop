@@ -29,3 +29,12 @@ Route::group(['middleware' => ['auth', 'verified']], function() {
     Route::get('products/favorites', 'ProductsController@favorites')->name('products.favorites');
 });
 Route::get('products/{product}', 'ProductsController@show')->name('products.show');
+
+// alipay测试路由
+// Route::get('alipay', function() {
+//     return app('alipay')->web([
+//         'out_trade_no' => time(),
+//         'total_amount' => '1',
+//         'subject' => 'test subject - 测试',
+//     ]);
+// });
